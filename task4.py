@@ -8,17 +8,10 @@ Return False if the number is not an integer
 """
 
 
-def isInteger(num):
-    answer = num % 1
-    if answer ==0:
-        return True
-    else:
-        return False    
+def isInteger(a):
+    return "." not in str(a)
 
-
-x = isInteger(9,5)
+x=isInteger(9.5)
 print(x)
-
-
-y = isInteger(-2)
+y=isInteger(-2)
 print(y)

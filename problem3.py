@@ -8,14 +8,13 @@ into another number.
 Example: The factors of 10 are 1, 2, 5, 10
 (2 points)
 """
-
-def factors(num):
-    List = [num]
-    for i in range(1,num):
-        if num % i == 0:
-            List.append(i)
-    List.sort()
-    return List
-
-print(factors(12))
-print(factors(37))
+import math
+def factors(x):
+    factorlist=[]
+    for i in range(1, x+1):
+        if x % i == 0:
+            factorlist.append(i)
+    factorlist.sort()
+    return factorlist
+y=factors(12)
+print(y)

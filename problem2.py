@@ -9,7 +9,6 @@ Note that the coordinates should be signed (positive or negative) floats
 """
 import math
 
-import math
 
 def distance(tup1,tup2):
 
